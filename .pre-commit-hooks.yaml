@@ -48,3 +48,11 @@
   entry: pre_commit_hooks/php-cs-fixer.sh
   language: script
   files: \.php$
+
+- id: symfony-schema-validation
+  name: Symfony Schema Validation
+  description: Check errors in schema Validation.
+  entry: pre_commit_hooks/symfony-validate.sh
+  language: script
+  pass_filenames: false
+  always_run: true
